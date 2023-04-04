@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register.create');
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
+Route::delete('/register/{id}', [RegisterController::class, 'destroy'])->name('register.destroy');
