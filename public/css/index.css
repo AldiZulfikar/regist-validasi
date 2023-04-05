@@ -1,0 +1,48 @@
+.wrap{
+  background-color: #0E6767;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  color: #D9D9D9;
+}
+.wrap input{
+ line-height: 35px;
+ color: white;
+}
+.wrap .input-fleid{
+  background: none;
+  border: none;
+  border-bottom: 2px solid #D9D9D9;
+}
+.wrap .input-fleid::placeholder { 
+  color: #D9D9D9;
+  opacity: 1; 
+}
+
+.wrap .input-fleid.flex{
+  width: 255px;
+}
+.wrap .wrap-table{
+  overflow: auto;
+}
+.wrap h1{
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.wrap .btn.btn-sort{
+  font-weight: 500;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: #D9D9D9;
+}
+
+.form-short .text-sort{
+  color: steelblue !important;
+}
+.wrap p{
+  font-size: 15px;
+  line-height: 20px;
+  /* or 167% */
+  
+  letter-spacing: 0.01em;
+}
